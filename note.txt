@@ -1,0 +1,3 @@
+rock = red
+paper = blue
+scissors - green

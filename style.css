@@ -1,0 +1,76 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* //RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* //VARIABLES */
+:root {
+    --BG-COLOR: #131313;
+    --FONT-COLOR: whitesmoke; 
+    --ROCK: RED;
+    --PAPER: BLUE;
+    --SCISSORS: GREEN;
+}
+
+body {
+    background-color: var(--BG-COLOR);
+    color: var(--FONT-COLOR);
+    font-family: "montserrat";
+}
+#rock {
+    color: var(--ROCK);
+}
+#paper {
+    color: var(--PAPER);
+}
+#scissors {
+    color: var(--SCISSORS);
+}
+header h1 {
+    margin: 20px;
+}
+main {
+    margin: 20px;
+    margin-top: 25%;
+    border: 2px solid gray;
+    padding: 15px;
+    border-radius: 7px;
+}
+main .score {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+main #userInput {
+    width: 100%;
+    padding: 7px 5px;
+    font-size: 1.2em;
+    margin: 40px 0 10px 0;
+}
+main .result {
+    margin: 10px;
+}
+main .btn {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+}
+main button {
+    background-color: var(--PAPER);
+    color: var(--FONT-COLOR);
+    outline: transparent;
+    border: transparent;
+    padding: 7px 20px;
+    font-size: 1.2em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+main button:active {
+    filter: contrast(75%);
+}
