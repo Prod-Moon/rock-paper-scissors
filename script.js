@@ -30,11 +30,12 @@ function computerResults() {
     result.textContent = "You didn't enter a valid input (try entering rock, paper or scissors)"
 } */
 function generateResult() {
-    const userInput = document.querySelector("#userInput").value;
+    let userInput = document.querySelector("#userInput").value;
     const cleanedUserInput = userInput.trim().toLowerCase();
 
     if (cleanedUserInput !== "rock" && cleanedUserInput !== "paper" && cleanedUserInput !== "scissors") {
         result.textContent = "You didn't enter a valid input (try entering rock, paper or scissors)"
+        userInput = document.querySelector("#userInput").value = "";
         return;
     } 
 
@@ -56,9 +57,12 @@ function generateResult() {
         playerCounts++;
         playerCount.innerText = playerCounts;
     }
+    
+    userInput = document.querySelector("#userInput").value = "";
 }
 
 submitButton.addEventListener("click", generateResult);
+
 
 
 
